@@ -7,7 +7,7 @@ class SampleTest {
 
     @Test
     fun test() {
-        val savePath = File("C:\\Users\\XiaoCao\\Desktop\\xiaocao-yande")
+        val savePath = File("/storage/emulated/0/Download/wenjian")
         runBlocking {
             for (i in 1..5) {
                 YandeAPI.getPosts(i).forEachIndexed { index, it ->
